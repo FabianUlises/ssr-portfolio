@@ -492,6 +492,9 @@ nav ul a:hover {
         margin-bottom: 1rem;
         padding: 0;
     }
+    .contact-banner-center.wrapper {
+        width: 100%;
+    }
 }
 /* End of contact section styles */
 
