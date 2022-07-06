@@ -283,6 +283,7 @@ nav ul a:hover {
     transform: translateY(-10px);
 }
 
+
     /* End of banner styles */
 
 
@@ -384,7 +385,7 @@ nav ul a:hover {
     border-radius: 50%;
 }
 .user-details {
-    text-align: left;
+    text-align: center;
 }
 .contact-banner-center h2{
     padding: 1.3rem;
@@ -416,6 +417,7 @@ nav ul a:hover {
 .user-resume a:hover {
     background-color: gray;
 }
+
 #contact-banner-form {
     background-color: #18181b;
     border-radius: 16px;
@@ -499,21 +501,20 @@ nav ul a:hover {
         justify-content: center;
     }
 }
-@media screen and (max-width: 480px) {
-    #contact-banner-form {
-        width: auto;
-    }
-    .user-details {
-        text-align: center;
-    }
-}
 
 @media screen and (min-width: 1129px) {
+
     .contact-banner-center {
         width: 75%;
         margin: 0 auto;
     }
 }
+@media screen and (max-width: 480px) {
+    #contact-banner-form {
+        display: none;
+    }
+}
+
 /* End of contact section styles */
 
 
