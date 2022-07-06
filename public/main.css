@@ -122,7 +122,6 @@ section {
 
 
 
-
 /* Start of page styles */
 /*Header section*/
 header {
@@ -314,9 +313,9 @@ nav ul a:hover {
     width: 100%;
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     align-items: center;
-    grid-row-gap: 3.2rem;
+    grid-gap: 3.2rem;
 }
 /* End of skills section */
 /* Start of projects section */
@@ -426,7 +425,7 @@ nav ul a:hover {
     height: max-content;
     justify-self: center;
     align-self: center;
-    padding: 4rem;
+    padding: 1rem;
 }
 #contact-banner-form h2{
     padding: 0;
@@ -480,6 +479,7 @@ nav ul a:hover {
 }
 @media screen and (max-width: 776px) {
     .contact-banner-center {
+        text-align: center;
         display: block;
     }
     .contact-banner-center h2{
@@ -492,12 +492,26 @@ nav ul a:hover {
         margin-bottom: 1rem;
         padding: 0;
     }
-    .contact-banner-center.wrapper {
-        width: 100%;
+    .wrapper {
+        width: 75%;
+    }
+    .projects-center {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 480px) {
+    #contact-banner-form {
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 1129px) {
+    .contact-banner-center {
+        width: 75%;
+        margin: 0 auto;
     }
 }
 /* End of contact section styles */
-
 
 
 
