@@ -121,7 +121,7 @@ const Index = () => {
 
 
             <section id="contact-banner">
-                <div className="contact-banner-center" id="contact">
+                <div className="contact-banner-center wrapper" id="contact">
                     <article id="contact-banner-info">
                         <div className="user-info">
                         <img src="/img/me.jpg" alt="Fabian Carrillo" />
