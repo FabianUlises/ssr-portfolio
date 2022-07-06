@@ -18,6 +18,4 @@ app.get('/', (req, res) => {
 app.all('*', (req, res) => {
     res.status(404).send('oops there was a problem serving your request')
 })
-app.listen(process.env.PORT, () => {
-    console.log('Iam awake')
-})
+app.listen(process.env.PORT)

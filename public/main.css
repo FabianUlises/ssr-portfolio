@@ -455,7 +455,7 @@ nav ul a:hover {
 .form-group input:focus {
     outline: none;
 }
-.contact-form button {
+.form-button {
     display: inline-block;
     font-size: 20px;
     width: 100%;
@@ -465,7 +465,7 @@ nav ul a:hover {
     border: none;
     color: whitesmoke;
 }
-.contact-form button:hover {
+.form-button:hover {
     cursor: pointer;
     background-color: gray;
 }

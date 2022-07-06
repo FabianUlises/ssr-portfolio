@@ -156,9 +156,9 @@ const Index = () => {
                             </div>
                             <div className="form-group">
                                 <label htmlFor="Message">Message</label>
-                                <textarea id="msg" name="message" id="form-msg" cols="23" rows="10"></textarea>
+                                <textarea cols="23" rows="10"></textarea>
                             </div>
-                            <button>Send</button>
+                            <div className='form-button'>Send</div>
                         </form>
                     </article>    
                 </div>
