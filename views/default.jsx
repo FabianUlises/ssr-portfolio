@@ -9,7 +9,7 @@ const Default = (html) => {
                 <link rel="stylesheet" href="/main.css" />
                 <script src="https://kit.fontawesome.com/bc3d8292c6.js" defer></script>
                 <script src='/app.js' type='text/javascript' defer></script>
-                <link rel="icon" href="favicon.png"></link>
+                <link rel="icon" href="/favicon.ico"></link>
                 <title>Fabian Carrillo</title>
             </head>
             <body>

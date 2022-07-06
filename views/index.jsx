@@ -134,31 +134,31 @@ const Index = () => {
                                 <p>You can reach me via github or Linkedin!</p>
                             </div>
                             <div className="user-resume">
-                                <a href="">Download my reusme</a>
+                                <a target='_blank' href="/fabian-resume.pdf" download>Download my reusme</a>
                             </div>
                         </div>
                     </article>
 
                     <article id="contact-banner-form">
                     <h2>Contact me</h2>
-                        <form action="#" className="contact-form flex">
+                        <form className="contact-form flex">
                             <div className="form-group">
                                 <label htmlFor="name">Name</label>
-                                <input type="text" />
+                                <input id='name' type="text" />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="email">Email</label>
-                                <input type="email" />
+                                <input id='email' type="email" />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="subject">Subject</label>
-                                <input type="text" />
+                                <input id='subject' type="text" />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="Message">Message</label>
-                                <textarea name="message" id="form-msg" cols="23" rows="10"></textarea>
+                                <textarea id="msg" name="message" id="form-msg" cols="23" rows="10"></textarea>
                             </div>
-                            <button>Submit</button>
+                            <button>Send</button>
                         </form>
                     </article>    
                 </div>
@@ -178,6 +178,7 @@ const Index = () => {
                     </div>
                 </div>
             </footer>
+
         </Default>
     )
 }
