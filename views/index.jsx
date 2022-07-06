@@ -150,7 +150,7 @@ const Index = () => {
                                 <p>You can reach me via github or Linkedin!</p>
                             </div>
                             <div className="user-resume">
-                                <a target='_blank' href="/fabian-resume.pdf" download>Download my reusme</a>
+                                <a target='_blank' href="/fabian-resume.pdf" download>Download my resume</a>
                             </div>
                         </div>
                     </article>
