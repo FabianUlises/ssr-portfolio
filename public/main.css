@@ -503,6 +503,9 @@ nav ul a:hover {
     #contact-banner-form {
         width: auto;
     }
+    .user-details {
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 1129px) {
