@@ -356,6 +356,13 @@ nav ul a:hover {
     padding: 2.4rem .8rem;
     border-bottom: 2px solid white;
 }
+.project-img {
+    height: 150px;
+}
+.project img {
+    height: 100%;
+    width: 100%;
+}
 .project h3{
     font-family: 'Rock Salt';
 }

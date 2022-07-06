@@ -105,7 +105,9 @@ const Index = () => {
                 <h2>Projects</h2>
                 <div className="projects-center wrapper">
                     <div className="project flex">
-                        <img src="/img/breadcrud.png" alt="breadcrud" />
+                        <div className="project-img">
+                            <img src="/img/breadcrud.png" alt="breadcrud" />
+                        </div>
                         <a target="_blank" href="https://sandboxbreadcrud.herokuapp.com/">
                             <h3>BreadCrud</h3>
                         </a>    
@@ -117,7 +119,9 @@ const Index = () => {
                         </div>
                     </div>
                     <div className="project flex">
-                        <img src="/img/dicegame.png" alt="dicegame" />
+                        <div className="project-img">
+                            <img src="/img/dicegame.png" alt="dicegame" />
+                        </div>
                         <a target="_blank" href="https://fabianulises.github.io/Milestone-Project/">
                             <h3>Dice Game</h3>
                         </a>    
