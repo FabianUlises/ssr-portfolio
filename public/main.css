@@ -61,6 +61,7 @@ html {
 body {
     font-size: 2.6rem;
     font-family: 'Arimo', sans-serif;
+    height: 100vh;
 }
 
 section {
@@ -564,3 +565,29 @@ footer span {
     color: gray;
 }
 /* End of footer styles */
+
+.err-container{
+    background-color: #3b3b44;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.err-msg {
+    max-width: 40rem;
+    font-family: sans-serif;
+    color: white;
+    line-height: 3rem;
+}
+.err-msg h3 {
+    margin-bottom: 2rem;
+}
+.err-msg a{
+    text-decoration: none;
+    display: inline-block;
+    padding: .8rem 1rem;
+    background-color: rebeccapurple;
+    color: inherit;
+    border-radius: 8px;
+    font-size: 1.9rem;
+}
