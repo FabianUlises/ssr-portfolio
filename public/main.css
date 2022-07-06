@@ -333,8 +333,9 @@ nav ul a:hover {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    place-items: center;
+    grid-gap: 4rem;
     grid-row-gap: 12rem;
+    place-items: center;
 }
 .projects-section a {
     transition: all 250ms ease;
@@ -344,11 +345,11 @@ nav ul a:hover {
 }
 .project {
     color: rebeccapurple;
-    align-self: flex-start;
+    align-self: normal;
     max-width: 300px;
     font-size: 1.8rem;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     transition: all 250ms ease;
     gap: 1.8rem;
