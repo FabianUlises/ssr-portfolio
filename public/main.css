@@ -331,9 +331,10 @@ nav ul a:hover {
 }
 .projects-center {
     width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center;
+    grid-row-gap: 12rem;
 }
 .projects-section a {
     transition: all 250ms ease;
@@ -507,11 +508,6 @@ nav ul a:hover {
     .contact-banner-center {
         width: 75%;
         margin: 0 auto;
-    }
-}
-@media screen and (max-width: 480px) {
-    #contact-banner-form {
-        display: none;
     }
 }
 

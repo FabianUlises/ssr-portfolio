@@ -116,6 +116,18 @@ const Index = () => {
                             <a target="_blank" href="https://github.com/FabianUlises/breadcrud"><i className="fa brands fa-github"></i></a>
                         </div>
                     </div>
+                    <div className="project flex">
+                        <img src="/img/dicegame.png" alt="dicegame" />
+                        <a target="_blank" href="https://fabianulises.github.io/Milestone-Project/">
+                            <h3>Dice Game</h3>
+                        </a>    
+                        <div className="project-center">
+                            <p>Visit a game I created using Javascript HTML & CSS</p>
+                        </div>
+                        <div className="github">
+                            <a target="_blank" href="https://github.com/FabianUlises/Milestone-Project.git"><i className="fa brands fa-github"></i></a>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -178,7 +190,6 @@ const Index = () => {
                     </div>
                 </div>
             </footer>
-
         </Default>
     )
 }
