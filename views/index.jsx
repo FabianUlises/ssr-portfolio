@@ -141,7 +141,7 @@ const Index = () => {
                     <article id="contact-banner-info">
                         <div className="user-info">
                         <img src="/img/me.jpg" alt="Fabian Carrillo" />
-                            <h2>Fabian Carrillo</h2>
+                            <h2 id='myname'>Fabian Carrillo</h2>
                         </div>
                         <div className="user-details">
                             <div className="user-about">

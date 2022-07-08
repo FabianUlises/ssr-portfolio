@@ -240,6 +240,7 @@ nav ul a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 100%;
 }
 .banner h1 {
     font-family: 'Rock Salt', cursive;
@@ -415,6 +416,9 @@ nav ul a:hover {
     margin-bottom: 2rem;
     color: rebeccapurple;
 }
+#contact-banner #myname {
+    color: var(--font-secondary-color);
+}
 .user-about {
     margin-bottom: 4rem;
 }
@@ -427,7 +431,6 @@ nav ul a:hover {
 .user-resume a:hover {
     background-color: gray;
 }
-
 #contact-banner-form {
     background-color: #18181b;
     border-radius: 16px;
@@ -590,4 +593,9 @@ footer span {
     color: inherit;
     border-radius: 8px;
     font-size: 1.9rem;
+}
+@media screen and (max-width: 414px) {
+    section {
+        padding: 4.8rem 2.4rem;
+    }
 }
