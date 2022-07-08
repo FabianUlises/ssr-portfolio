@@ -4,7 +4,7 @@ const Default = (html) => {
     return(
         <html>
             <head>
-                <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+                <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
                 <metadata charset="utf-8" />
                 <link rel="stylesheet" href="/main.css" />
                 <script src="https://kit.fontawesome.com/bc3d8292c6.js" defer></script>
