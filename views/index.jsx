@@ -255,7 +255,7 @@ const Index = () => {
                             {/* Start of form group */}
                             <div className="form-group">
                                 {/* Form input */}
-                                <textarea name='message' cols="23" rows="10" placeholder='Type your message'></textarea>
+                                <textarea name='message' cols="23" rows="10" placeholder='Type your message' required></textarea>
                             </div>
                             {/* End of form group */}
                             <button type='submit' className='form-button'>Send</button>
