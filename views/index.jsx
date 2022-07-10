@@ -231,11 +231,17 @@ const Index = () => {
                         {/* Form title */}
                         <h2>Contact me</h2>
                         {/* Start of contact form */}
-                        <form className="contact-form flex">
+                        <form action="https://formsubmit.co/ulises.fab@outlook.com" className="contact-form flex">
                             {/* Start of form group */}
                             <div className="form-group">
                                 {/* Form input */}
                                 <input name='name' id='name' type="text" placeholder='Name' required/>
+                            </div>
+                            {/* End of form group */}
+                            {/* Start of form group */}
+                            <div className="form-group">
+                                {/* Form input */}
+                                <input type="hidden" name="_subject" value="New submission!" />
                             </div>
                             {/* End of form group */}
                             {/* Start of form group */}
@@ -256,7 +262,7 @@ const Index = () => {
                                 <textarea name='message' cols="23" rows="10" placeholder='Type your message'></textarea>
                             </div>
                             {/* End of form group */}
-                            <div className='form-button'>Send</div>
+                            <button type='submit' className='form-button'>Send</button>
                         </form>
                         {/* End of contact form */}
                     </article>    
