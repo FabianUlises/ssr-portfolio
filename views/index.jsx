@@ -165,7 +165,7 @@ const Index = () => {
                                 <input name='email' id='email' type="email" placeholder='Email' required/>
                             </div>
                             <div className="form-group">
-                                <input name='phonenumber' id='subject' type="number" placeholder='Phonenumber' />
+                                <input name='phonenumber' id='subject' type="tel" placeholder='Phonenumber' />
                             </div>
                             <div className="form-group">
                                 <textarea name='message' cols="23" rows="10" placeholder='Type your message'></textarea>
