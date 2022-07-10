@@ -159,20 +159,16 @@ const Index = () => {
                     <h2>Contact me</h2>
                         <form className="contact-form flex">
                             <div className="form-group">
-                                <label htmlFor="name">Name</label>
-                                <input id='name' type="text" />
+                                <input name='name' id='name' type="text" placeholder='Name' required/>
                             </div>
                             <div className="form-group">
-                                <label htmlFor="email">Email</label>
-                                <input id='email' type="email" />
+                                <input name='email' id='email' type="email" placeholder='Email' required/>
                             </div>
                             <div className="form-group">
-                                <label htmlFor="subject">Subject</label>
-                                <input id='subject' type="text" />
+                                <input name='phonenumber' id='subject' type="number" placeholder='Phonenumber' />
                             </div>
                             <div className="form-group">
-                                <label htmlFor="Message">Message</label>
-                                <textarea cols="23" rows="10"></textarea>
+                                <textarea name='message' cols="23" rows="10" placeholder='Type your message'></textarea>
                             </div>
                             <div className='form-button'>Send</div>
                         </form>

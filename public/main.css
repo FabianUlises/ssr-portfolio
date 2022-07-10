@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url();
 /* Default Syles */
 :root {
     --font-primary-color: #551a8b;
@@ -118,6 +119,12 @@ section {
     100% {
     }
 }
+
+
+
+
+
+
 
 
 
@@ -356,8 +363,8 @@ nav ul a:hover {
     text-align: center;
     transition: all 250ms ease;
     gap: 1.8rem;
-    padding: 2.4rem .8rem;
     border-bottom: 2px solid white;
+    padding-bottom: 3rem;
 }
 .project-img {
     height: 150px;
@@ -433,17 +440,21 @@ nav ul a:hover {
 .user-resume a:hover {
     background-color: #18181b;
 }
+
+
+
 #contact-banner-form {
-    background-color: #18181b;
+    background-color: #18181bb5;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
-    width: max-content;
+    padding: 1rem;
+    width: 35rem;
     height: max-content;
     justify-self: center;
-    align-self: center;
-    padding: 1rem;
+
 }
+
 #contact-banner-form h2{
     padding: 0;
 }
@@ -462,15 +473,30 @@ nav ul a:hover {
     gap: 2.4rem;
     margin-bottom: 2rem;
 } 
-.form-group input {
-    padding: .8rem 1rem;
-    font-family: inherit;
-    color: rebeccapurple;
-    border: none;
-    border-radius: 8px;
-}
-.form-group input:focus {
+.form-group input{
+    height: 45px;
+    width: 100%;
     outline: none;
+    border-radius: 5px;
+    border: 3px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 250ms ease;
+    color:rebeccapurple;
+}
+.contact-form textarea {
+    transition: all 250ms ease;
+    color:rebeccapurple;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 3px solid #ccc;
+    padding: 1rem;
+}
+.form-group input:focus, .contact-form textarea:focus {
+    border-color: mediumpurple;
 }
 .form-button {
     display: inline-block;
@@ -486,11 +512,7 @@ nav ul a:hover {
     cursor: pointer;
     background-color: gray;
 }
-.contact-form textarea {
-    border: none;
-    padding: .2rem .4rem;
-    border-radius: 8px;    
-}
+
 .contact-form textarea:focus {
     outline: none;
 }
