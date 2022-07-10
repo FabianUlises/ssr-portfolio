@@ -9,12 +9,21 @@
     width: 100%;
 }
 .project {
-    color: rebeccapurple;
+    color: white;
     align-self: normal;
     text-align: center;
     transition: all 250ms ease;
     border-bottom: 2px solid white;
     padding-bottom: 3rem;
+}
+
+.project h3 {
+    background-color: #66339961;
+    color: whitesmoke;
+    transition: background-color 250ms ease;
+}
+.project h3:hover {
+    background-color: rebeccapurple;
 }
 .projects-section h2 {
     margin-bottom: 4rem;
@@ -24,6 +33,7 @@
 }
 .projects-section a {
     transition: all 250ms ease;
+    color: rebeccapurple;
 }
 .projects-section a:hover {
     color: whitesmoke;

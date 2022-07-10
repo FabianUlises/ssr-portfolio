@@ -238,12 +238,8 @@ const Index = () => {
                                 <input name='name' id='name' type="text" placeholder='Name' required/>
                             </div>
                             {/* End of form group */}
-                            {/* Start of form group */}
-                            <div className="form-group">
                                 {/* Form input */}
                                 <input type="hidden" name="_subject" value="New submission!" />
-                            </div>
-                            {/* End of form group */}
                             {/* Start of form group */}
                             <div className="form-group">
                                 {/* Form input */}

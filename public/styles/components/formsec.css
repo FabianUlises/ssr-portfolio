@@ -40,13 +40,13 @@
 }
 .user-resume a {
     display: inline-block;
-    background-color: rebeccapurple;
+    background-color: #663399c9;
     padding: 1.2rem 2rem;
     border-radius: 6px;
     transition: background-color 250ms ease;    
 }
 .user-resume a:hover {
-    background-color: #18181b;
+    background-color: rebeccapurple;
 }
 
 
@@ -106,13 +106,14 @@
     width: 100%;
     padding: 1.2rem 2rem;
     border-radius: 10px;
-    background-color: rebeccapurple;
+    background-color: #663399c9;
     border: none;
     color: whitesmoke;
+    transition: background-color 250ms ease;
 }
 .form-button:hover {
     cursor: pointer;
-    background-color: gray;
+    background-color: rebeccapurple;
 }
 
 .contact-form textarea:focus {
