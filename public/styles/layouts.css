@@ -1,0 +1,59 @@
+html {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: #18181b;
+    scroll-behavior: smooth;
+}
+body {
+    height: 100vh;
+}
+section {
+    scroll-snap-align: center;
+    padding: 10rem 4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex {
+    display: flex;
+}
+.wrapper {
+    max-width: 75%;
+    margin: 0 auto
+}
+
+/* Start of page section layouts */
+/* Header section layout */
+.banner {
+    flex: 1 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+/* Skills section layout */
+.skills-center {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    align-items: center;
+    grid-gap: 3.2rem;
+}
+.skills {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Project section layout */
+.projects-center {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 4rem;
+    grid-row-gap: 12rem;
+    place-items: center;
+}
+.project {
+    max-width: 300px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.8rem;
+}

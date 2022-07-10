@@ -1,0 +1,30 @@
+.projects-section {
+    color: white;
+}
+.project-img {
+    height: 150px;
+}
+.project img {
+    height: 100%;
+    width: 100%;
+}
+.project {
+    color: rebeccapurple;
+    align-self: normal;
+    text-align: center;
+    transition: all 250ms ease;
+    border-bottom: 2px solid white;
+    padding-bottom: 3rem;
+}
+.projects-section h2 {
+    margin-bottom: 4rem;
+    padding: 2rem;
+    align-self: center;
+    border-bottom: 1px solid whitesmoke;
+}
+.projects-section a {
+    transition: all 250ms ease;
+}
+.projects-section a:hover {
+    color: whitesmoke;
+}

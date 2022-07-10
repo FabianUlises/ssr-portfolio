@@ -1,0 +1,33 @@
+:root {
+    --font-primary-color: #551a8b;
+    --font-secondary-color: #ede4de;
+    --font-sm-size: 1.3rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+.resize-animation-stopper * {
+    animation: none !important;
+    transition: none !important;
+  }
+.sr-only {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+a, a:hover, a:active {
+    color: inherit;
+}
+textarea {
+    resize: none;
+}
+h2 {
+    font-family: 'Rock Salt', cursive;
+}

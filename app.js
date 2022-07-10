@@ -12,10 +12,13 @@ app.use(express.static('public'));
 
 
 // Routes
+// Root / Home page
 app.get('/', (req, res) => {
     res.status(200).render('index')
 })
+// Catch all / err
 app.all('*', (req, res) => {
     res.status(404).render('error')
 })
+// Server listening
 app.listen(process.env.PORT)

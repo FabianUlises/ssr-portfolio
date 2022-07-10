@@ -1,0 +1,7 @@
+.skills {
+    background:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0.5)), url('../../img/filler.jpg')center/cover fixed no-repeat;
+    color: var(--font-secondary-color);
+}
+.skills-center {
+    text-align: center;
+}
