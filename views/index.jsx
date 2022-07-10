@@ -231,7 +231,7 @@ const Index = () => {
                         {/* Form title */}
                         <h2>Contact me</h2>
                         {/* Start of contact form */}
-                        <form action="https://formsubmit.co/ulises.fab@outlook.com" className="contact-form flex">
+                        <form action="https://formsubmit.co/ulises.fab@outlook.com" method='POST' className="contact-form flex" >
                             {/* Start of form group */}
                             <div className="form-group">
                                 {/* Form input */}
