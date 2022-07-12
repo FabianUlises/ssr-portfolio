@@ -27,4 +27,4 @@ links.forEach(el => {
       primaryNav.setAttribute('data-visible', false)
       navToggle.classList.toggle('toggle');
   })
-})
+}) 
