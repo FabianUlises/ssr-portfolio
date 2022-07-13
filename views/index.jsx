@@ -184,7 +184,7 @@ const Index = () => {
                         </a>    
                         {/* Start of project content */}
                         <div className="project-center">
-                            <p>Visit a game I created using Javascript HTML & CSS</p>
+                            <p>Rest-Rant is a site I created using MERN stack</p>
                         </div>
                         <div className="github">
                             <a target="_blank" href="https://github.com/FabianUlises/Rest-Rant.git"><i className="fa brands fa-github"></i></a>
