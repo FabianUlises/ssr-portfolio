@@ -10,6 +10,7 @@ window.addEventListener("resize", () => {
   }, 400);
 });
 
+
 navToggle.addEventListener('click', () => {
     navToggle.classList.toggle('toggle');
     const visibility = primaryNav.getAttribute('data-visible');

@@ -175,6 +175,27 @@ const Index = () => {
                     <div className="project flex">
                         {/* Start of Project image */}
                         <div className="project-img">
+                            <img src="/img/rest-rant.jpg" alt="restaurant rating site" />
+                        </div>
+                        {/* End of Project image */}
+                        {/* Project name */}
+                        <a target="_blank" href="https://sandboxrestrant.herokuapp.com/">
+                            <h3>Rest Rant</h3>
+                        </a>    
+                        {/* Start of project content */}
+                        <div className="project-center">
+                            <p>Visit a game I created using Javascript HTML & CSS</p>
+                        </div>
+                        <div className="github">
+                            <a target="_blank" href="https://github.com/FabianUlises/Rest-Rant.git"><i className="fa brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    {/* End of project content */}
+                    {/* End of project */}
+                    {/* Start of project */}
+                    <div className="project flex">
+                        {/* Start of Project image */}
+                        <div className="project-img">
                             <img src="/img/dicegame.jpg" alt="dicegame" />
                         </div>
                         {/* End of Project image */}
@@ -196,6 +217,7 @@ const Index = () => {
                 {/* Start of project center */}
             </section>
             {/* End of projects section */}
+
 
 
             {/* Start of contact section */}
