@@ -4,17 +4,273 @@
 @import url('./layouts.css');
 @import url('./components/typography.css');
 @import url('./components/header.css');
-@import url('./components/skills.css');
-@import url('./components//projectsection.css');
-@import url('./components/formsec.css');
-@import url('./components/footer.css');
-@import url('./components/errorpage.css');
+/* Skills */
+.skills {
+    background:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0.5)), url('../../img/filler.jpg')center/cover fixed no-repeat;
+    color: var(--font-secondary-color);
+}
+.skills-center {
+    text-align: center;
+}
+
+/* Projects */
+.projects-section {
+    color: white;
+}
+.project-img {
+    height: 150px;
+}
+.project img {
+    height: 100%;
+    width: 100%;
+}
+.project {
+    color: white;
+    align-self: normal;
+    text-align: center;
+    transition: all 250ms ease;
+    border-bottom: 2px solid white;
+    padding-bottom: 3rem;
+}
+
+.project h3 {
+    background-color: #66339961;
+    color: whitesmoke;
+    transition: background-color 250ms ease;
+}
+.project h3:hover {
+    background-color: rebeccapurple;
+}
+.projects-section h2 {
+    margin-bottom: 4rem;
+    padding: 2rem;
+    align-self: center;
+    border-bottom: 1px solid whitesmoke;
+}
+.projects-section a {
+    transition: all 250ms ease;
+    color: rebeccapurple;
+}
+.projects-section a:hover {
+    color: whitesmoke;
+}
+
+/* Contact */
+#contact-banner {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('/img/contact.jpg')fixed center/cover no-repeat;
+    color: var(--font-secondary-color);
+}
+.contact-banner-center {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(525px, 1fr));
+    grid-row-gap: 3rem;
+    text-align: center;
+}
+#contact-banner-info img {
+    height: 200px;
+    border-radius: 50%;
+}
+.user-details {
+    text-align: center;
+}
+.contact-banner-center h2{
+    padding: 1.3rem;
+    font-family: 'Rock Salt'
+}
+.contact-banner-center p {
+    letter-spacing: 1px;
+    line-height: 3.2rem
+}
+#contact-banner-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    margin-bottom: 8rem;
+}
+#contact-banner h2 {
+    margin-bottom: 2rem;
+    color: rebeccapurple;
+}
+#contact-banner #myname {
+    color: var(--font-secondary-color);
+}
+.user-about {
+    margin-bottom: 4rem;
+}
+.user-resume a {
+    display: inline-block;
+    background-color: #663399c9;
+    padding: 1.2rem 2rem;
+    border-radius: 6px;
+    transition: background-color 250ms ease;    
+}
+.user-resume a:hover {
+    background-color: rebeccapurple;
+}
 
 
 
+#contact-banner-form {
+    background-color: #18181bb5;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 35rem;
+    height: max-content;
+    justify-self: center;
+    box-shadow: 2px 2px 2px #a9a9a952;
+}
 
+#contact-banner-form h2{
+    padding: 0;
+}
+.contact-form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form .form-group {
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 2.4rem;
+    margin-bottom: 2rem;
+} 
+.form-group input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 3px solid #ccc;
+    padding-left: 15px;
+    border-bottom-width: 2px;
+    transition: all 250ms ease;
+    color:rebeccapurple;
+}
+.contact-form textarea {
+    transition: all 250ms ease;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 3px solid #ccc;
+    padding: 1rem;
+}
+.form-group input:focus, .contact-form textarea:focus, .form-group input:valid, .contact-form textarea:valid{
+    border-color: mediumpurple;
+}
+.form-button {
+    display: inline-block;
+    width: 100%;
+    padding: 1.2rem 2rem;
+    border-radius: 10px;
+    background-color: #663399c9;
+    border: none;
+    color: whitesmoke;
+    transition: background-color 250ms ease;
+}
+.form-button:hover {
+    cursor: pointer;
+    background-color: rebeccapurple;
+}
 
+.contact-form textarea:focus {
+    outline: none;
+}
+@media screen and (max-width: 776px) {
+    .contact-banner-center {
+        text-align: center;
+        display: block;
+    }
+    .contact-banner-center h2{
+    text-align: center;
+    }
+    #contact-banner-form {
+        margin: 0 auto;
+    }
+    #contact-banner h2{
+        margin-bottom: 1rem;
+        padding: 0;
+    }
+    .wrapper {
+        width: 75%;
+    }
+    .projects-center {
+        justify-content: center;
+    }
+}
 
+@media screen and (min-width: 1129px) {
+
+    .contact-banner-center {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+/* Footer */
+footer {
+    color: var(--font-secondary-color);
+    font-size: var(--font-sm-size);
+    text-align: right;
+    padding: 4rem 0;
+}
+.footer-content {
+    max-width: 32rem;
+    margin: 0 auto
+}
+footer .banner-icons, .footer-text {
+    padding: 2.4rem;
+}
+.footer-icons {
+    width: 50%;
+    margin: auto;
+    justify-content: space-around;
+}
+.footer-icons a {
+    transition: color 250ms ease, transform 250ms ease;
+}
+.footer-icons a:hover {
+    color: rebeccapurple;
+    transform: translateY(-10px);
+}
+.footer-text {
+    text-align: center
+}
+footer span {
+    color: gray;
+}
+
+/* Error page */
+.err-container{
+    background-color: #3b3b44;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.err-msg {
+    max-width: 40rem;
+    font-family: sans-serif;
+    color: white;
+    line-height: 3rem;
+}
+.err-msg h3 {
+    margin-bottom: 2rem;
+}
+.err-msg a{
+    text-decoration: none;
+    display: inline-block;
+    padding: .8rem 1rem;
+    background-color: rebeccapurple;
+    color: inherit;
+    border-radius: 8px;
+    font-size: 1.9rem;
+}
+@media screen and (max-width: 414px) {
+    section {
+        padding: 4.8rem 2.4rem;
+    }
+}
 
 
 
