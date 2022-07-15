@@ -34,12 +34,12 @@
 }
 
 .project h3 {
-    background-color: #66339961;
+    background-color: rebeccapurple;
     color: whitesmoke;
     transition: background-color 250ms ease;
 }
 .project h3:hover {
-    background-color: rebeccapurple;
+    background-color: #66339961;
 }
 .projects-section h2 {
     margin-bottom: 4rem;
@@ -164,14 +164,14 @@
     width: 100%;
     padding: 1.2rem 2rem;
     border-radius: 10px;
-    background-color: #663399c9;
+    background-color: rebeccapurple;
     border: none;
     color: whitesmoke;
     transition: background-color 250ms ease;
 }
 .form-button:hover {
     cursor: pointer;
-    background-color: rebeccapurple;
+    background-color: #66339961;
 }
 
 .contact-form textarea:focus {

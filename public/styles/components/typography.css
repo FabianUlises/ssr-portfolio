@@ -14,6 +14,9 @@ h1 {
 h2 {
     font-size: 3rem;
 }
+.page-title {
+    font-size: 4rem;
+}
 #bannerIcon, .project .github {
     font-size: 2.3rem;
 }

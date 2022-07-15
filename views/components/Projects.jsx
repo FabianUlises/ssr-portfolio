@@ -6,7 +6,7 @@ const Projects = () => {
         {/* Start of projects section */}
         <section className="projects-section flex" id="projects">
             {/* Project title */}
-            <h2>Projects</h2>
+            <h2 className='page-title'>Projects</h2>
             {/* Start of project center */}
             <div className="projects-center wrapper">
                 {/* Start of project */}

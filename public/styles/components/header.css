@@ -127,7 +127,7 @@ nav ul a:hover {
 }
 .banner-icons a:hover {
     color: var(--font-secondary-color);
-    transform: translateY(-10px);
+    transform: translateY(-5px);
 }
 @media screen and (max-width: 776px) {
     .nav-container{
