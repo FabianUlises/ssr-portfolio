@@ -16,9 +16,25 @@ app.use(express.static('public'));
 app.get('/', (req, res) => {
     res.status(200).render('index')
 })
-// Catch all / err
-app.all('*', (req, res) => {
-    res.status(404).render('error')
+
+app.all('*', (req, res, next) => {
+    const err = new Error(`Can't find ${req.originalUrl} on this server`)
+    err.status = 'fail';
+    err.statusCode = 404;
+    next(err)
 })
+// Catch all / err
+app.use((err, req, res, next) => {
+    err.statusCode = err.statusCode || 500;
+    err.status = err.status || 'error';
+
+    res.status(err.statusCode).json({
+        status: err.status,
+        message: err.message
+    });
+});
+// app.all('*', (req, res) => {
+//     res.status(404).render('error')
+// })
 // Server listening
 app.listen(process.env.PORT)
