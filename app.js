@@ -2,6 +2,7 @@
 require('dotenv').config();
 const express = require('express');
 const app = express();
+const AppError = require('./utils/appError');
 
 // Middleware
 // Jsx engine
@@ -15,27 +16,12 @@ app.use(express.static('public'));
 // Root / Home page
 app.get('/', (req, res) => {
     res.status(200).render('index')
-})
-
-app.all('*', (req, res, next) => {
-    const err = new Error(`Can't find ${req.originalUrl} on this server`)
-    err.status = 'fail';
-    err.statusCode = 404;
-    next(err)
-})
-// Catch all / err
-app.use((err, req, res, next) => {
-    err.statusCode = err.statusCode || 500;
-    err.status = err.status || 'error';
-
-    res.status(err.statusCode).render('error',{
-        message: err.message
-    });
 });
-// Send error in json without view
-// res.status(err.status).json({
-//     status: err.status,
-//     message: err.message
-// });
+// Catch all / err
+app.all('*', (req, res, next) => {
+    next(new AppError(`Can't find ${req.originalUrl} on this server`));
+});
+
+app.use(require('./controllers/errorHandler'));
 // Server listening
-app.listen(process.env.PORT)
+app.listen(process.env.PORT);
