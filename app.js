@@ -2,7 +2,6 @@
 require('dotenv').config();
 const express = require('express');
 const app = express();
-const AppError = require('./utils/appError');
 
 // Middleware
 // Jsx engine
@@ -18,10 +17,9 @@ app.get('/', (req, res) => {
     res.status(200).render('index')
 });
 // Catch all / err
-app.all('*', (req, res, next) => {
-    next(new AppError(`Can't find ${req.originalUrl} on this server`));
+app.all('*', (req, res) => {
+    res.render('error');
 });
 
-app.use(require('./controllers/errorHandler'));
 // Server listening
 app.listen(process.env.PORT);
