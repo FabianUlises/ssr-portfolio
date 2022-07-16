@@ -28,13 +28,14 @@ app.use((err, req, res, next) => {
     err.statusCode = err.statusCode || 500;
     err.status = err.status || 'error';
 
-    res.status(err.statusCode).json({
-        status: err.status,
+    res.status(err.statusCode).render('error',{
         message: err.message
     });
 });
-// app.all('*', (req, res) => {
-//     res.status(404).render('error')
-// })
+// Send error in json without view
+// res.status(err.status).json({
+//     status: err.status,
+//     message: err.message
+// });
 // Server listening
 app.listen(process.env.PORT)
