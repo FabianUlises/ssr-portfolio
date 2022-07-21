@@ -12,7 +12,9 @@
 .skills-center {
     text-align: center;
 }
-
+.git-icon {
+    width: 100%;
+}
 /* Projects */
 .projects-section {
     color: white;

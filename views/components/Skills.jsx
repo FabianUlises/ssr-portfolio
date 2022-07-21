@@ -45,7 +45,7 @@ const Skills = () => {
                 {/* Start of Skill */}
                 <article className="skill">
                     <div className="skill-icon">
-                        <img src="/img/python.png" height="100px" alt="python" />
+                        <img src="/img/Git.png" height="75px" alt="python" className='git-icon' />
                     </div>
                 </article>
                 {/* End of Skill */}

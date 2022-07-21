@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 });
 // Catch all / err
 app.all('*', (req, res) => {
-    res.render('error');
+    res.status(404).render('error');
 });
 
 // Server listening
